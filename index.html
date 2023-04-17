@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1 class = "heading">Bookshelf Data</h1>
-    <div id = "bookContainer">
+    <div class="top-nav">
+        <div class="leftNav">Collection</div>
+        <div class="links">
+            <button> <a href="about.html">About</a></button>
+            <button> <a href="contact.html">Contact</a></button>
+        </div>
+    </div>
 
+    <h1 class = "heading">Bookshelf Data</h1>
+    <div class="main">
+
+        <div class="form-container">
+            <h2>Add Books</h2>
+            <br>
+            <form id="addBookForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="language" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+        
+        <div id = "bookContainer">
+            
+    
+        </div>
     </div>
 
     <script src = js/book-data.js ></script>
